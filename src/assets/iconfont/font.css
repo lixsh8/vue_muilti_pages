@@ -1,0 +1,12 @@
+@font-face {
+  font-family: DIN-Medium;
+  src: url("DIN-Medium.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: DIN;
+  src: url("DIN-Medium.otf");
+  font-style: normal;
+  font-weight: normal;
+}

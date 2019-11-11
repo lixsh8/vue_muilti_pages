@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="App-Config"
+      content="fullscreen=yes,useHistoryState=yes,transition=yes"
+    />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>规则</title>
+    <style>
+      html,
+      body {
+        min-height: 100%;
+        background: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 头部 -->
+      <div class="header">
+        <div class="l" onclick="back()"></div>
+        <div class="title">规则</div>
+      </div>
+      <div class="rule">
+        <img src="${require('../../assets/images/morningChallenge/rule_1.png')}" alt="">
+        <img src="${require('../../assets/images/morningChallenge/rule_2.png')}" alt="">
+      </div>
+    </div>
+    <script>
+      function back() {
+        window.history.go(-1);
+      }
+    </script>
+  </body>
+</html>

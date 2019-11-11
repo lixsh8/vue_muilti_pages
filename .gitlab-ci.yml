@@ -1,0 +1,19 @@
+stages:
+- dev
+- deploy
+dev:
+  stage: dev
+  script:
+    - ~/deploy_sh/deploy_dev_h5 ququqian h5 
+  only:
+    - dev
+  tags:
+    - shell
+deploy:
+  stage: deploy
+  script:
+    - ~/deploy_sh/deploy_master_h5 ququqian h5
+  only:
+    - master
+  tags:
+    - shell
